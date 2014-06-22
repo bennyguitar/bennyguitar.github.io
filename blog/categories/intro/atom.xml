@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Intro | bennyguitar]]></title>
   <link href="http://bennyguitar.github.io/blog/categories/intro/atom.xml" rel="self"/>
   <link href="http://bennyguitar.github.io/"/>
-  <updated>2014-06-22T13:57:13-05:00</updated>
+  <updated>2014-06-22T14:14:24-05:00</updated>
   <id>http://bennyguitar.github.io/</id>
   <author>
     <name><![CDATA[Benjamin Gordon]]></name>
@@ -20,7 +20,7 @@
     <id>http://bennyguitar.github.io/blog/2014/06/22/make-your-life-easier-dot-rb</id>
     <content type="html"><![CDATA[<h3>Computers are awesome. Seriously.</h3>
 
-<p>I constantly find myself in awe at how quick it is to find/present/mold information using a computer. Although beautiful in my mind, my first real programming language, Objective-C, isn&rsquo;t the best choice for manipulating files on the current computer (though I used to do this off-label using the iOS Simulator&hellip;). With that said, over the past year and a half I&rsquo;ve been growing fairly comfortable in Ruby after using Rails to build web backends and now using it to make command-line apps. It&rsquo;s slowly becoming one of my favorite languages to just open up and use. The time to open up an editor and have a prototype ready for running is practically negligible. This is the opposite of what I&rsquo;ve found with iOS development and Android development particularly.</p>
+<p>I constantly find myself in awe at how quick it is to find/present/mold information using a computer. Although beautiful in my mind, my first real programming language, <a href="http://en.wikipedia.org/wiki/Objective-C">Objective-C</a>, isn&rsquo;t the best choice for manipulating files on the current computer (though I used to do this off-label using the iOS Simulator&hellip;). With that said, over the past year and a half I&rsquo;ve been growing fairly comfortable in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a> after using Rails to build web backends and now using it to make command-line apps. It&rsquo;s slowly becoming one of my favorite languages to just open up and use. The time to open up an editor and have a prototype ready for running is practically negligible. This is the opposite of what I&rsquo;ve found with iOS development and Android development particularly.</p>
 
 <p>For instance, a task at work was to create an Excel spreadsheet with select information (social media links) from a <code>.json</code> configuration file for an app we&rsquo;re building. This doesn&rsquo;t sound too bad, right? I agree, except the format of the data was not one where a quick import would have worked. So out comes Ruby. And 3 minutes of writing later, out pops a <code>.csv</code> file that gets imported into Google Docs and ready for editing by others.</p>
 
