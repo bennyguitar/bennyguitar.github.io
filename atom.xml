@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[bennyguitar]]></title>
+  <link href="http://bennyguitar.github.io/atom.xml" rel="self"/>
+  <link href="http://bennyguitar.github.io/"/>
+  <updated>2014-06-22T12:08:21-05:00</updated>
+  <id>http://bennyguitar.github.io/</id>
+  <author>
+    <name><![CDATA[Benjamin Gordon]]></name>
+    <email><![CDATA[benjaming@intgroup.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
