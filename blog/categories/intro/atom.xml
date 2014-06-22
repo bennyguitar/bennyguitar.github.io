@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Intro | bennyguitar]]></title>
+  <link href="http://bennyguitar.github.io/blog/categories/intro/atom.xml" rel="self"/>
+  <link href="http://bennyguitar.github.io/"/>
+  <updated>2014-06-22T13:55:43-05:00</updated>
+  <id>http://bennyguitar.github.io/</id>
+  <author>
+    <name><![CDATA[Benjamin Gordon]]></name>
+    <email><![CDATA[benjaming@intgroup.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[make_your_life_easier.rb]]></title>
+    <link href="http://bennyguitar.github.io/blog/2014/06/22/make-your-life-easier-dot-rb/"/>
+    <updated>2014-06-22T13:05:54-05:00</updated>
+    <id>http://bennyguitar.github.io/blog/2014/06/22/make-your-life-easier-dot-rb</id>
+    <content type="html"><![CDATA[<h3>Computers are awesome. Seriously.</h3>
+
+<p>I constantly find myself in awe at how quick it is to find/present/mold information using a computer. Although beautiful in my mind, my first real programming language, Objective-C, isn&rsquo;t the best choice for manipulating files on the current computer (though I used to do this off-label using the iOS Simulator&hellip;). With that said, over the past year and a half I&rsquo;ve been growing fairly comfortable in Ruby after using Rails to build web backends and now using it to make command-line apps. It&rsquo;s slowly becoming one of my favorite languages to just open up and use. The time to open up an editor and have a prototype ready for running is practically negligible. This is the opposite of what I&rsquo;ve found with iOS development and Android development particularly.</p>
+
+<p>For instance, a task at work was to create an Excel spreadsheet with select information (social media links) from a <code>.json</code> configuration file for an app we&rsquo;re building. This doesn&rsquo;t sound too bad, right? I agree, except the format of the data was not one where a quick import would have worked. So out comes Ruby. And 3 minutes of writing later, out pops a <code>.csv</code> file that gets imported into Google Docs and ready for editing by others.</p>
+
+<p>```ruby</p>
+
+<h1>!/usr/bin/env ruby</h1>
+
+<p>require &lsquo;fileutils&rsquo;
+require &lsquo;json&rsquo;</p>
+
+<p>def print_social_media file_path</p>
+
+<pre><code>contents = File.open(file_path, "rb").read
+obj = JSON.parse(contents)
+obj['targets'].each do |t|
+    x = t['info']
+    fb = x['FacebookURL']
+    twit = x['TwitterURL']
+    you = x['YoutubeURL']
+    link = x['LinkedInURL']
+    pin = x['PinterestURL']
+    puts "#{x['Name']},#{fb ? fb : ''},#{twit ? twit : ''},#{you ? you : ''},#{link ? link : ''},#{pin ? pin : ''}"
+end
+</code></pre>
+
+<p>end</p>
+
+<p>Dir.glob(&lsquo;*.json&rsquo;).each do |f|</p>
+
+<pre><code>if f.include? 'configuration'
+    print_social_media f
+end
+</code></pre>
+
+<p>end
+```</p>
+
+<p>What would have been a 3 hour process by hand became a 3 minute process via a computer.</p>
+
+<p>Man, I love software.</p>
+]]></content>
+  </entry>
+  
+</feed>
